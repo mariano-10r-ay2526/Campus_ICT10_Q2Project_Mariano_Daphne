@@ -1,0 +1,62 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avengers: Doomsday</title>
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module"
+            src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>AVENGERS <span>DOOMSDAY</span></h1>
+    </header>
+      <nav>
+    <a href="homepage.html">Homepage</a>
+    <a href="elementchecker.html">Element Checker</a>
+    <a href="clubmembers.html">School Club Members</a>
+    <a href="meet_the_creator.html" class="active">Meet the Creator</a>
+  </nav>
+
+    <div class="container">
+        <h2>Student Database</h2>
+        <p>Search for student records.</p>
+
+        <form onsubmit="return false;">
+
+            <input type="text" id="student_name_first" placeholder="Enter first student number">
+
+            <input
+                type="text"
+                id="student_name_last"
+                placeholder="Enter second student number"
+            >
+
+            <input
+                type="button"
+                py-click="student_club"
+                value="Search"
+            >
+
+        </form>
+
+        <div id="student">
+            Search results will appear here.
+        </div>
+
+    </div>
+
+    <footer>
+        EARTH-616 | MULTIVERSE DATABASE
+    </footer>
+
+    <script type="py" src="main1.py"></script>
+
+</body>
+</html>
